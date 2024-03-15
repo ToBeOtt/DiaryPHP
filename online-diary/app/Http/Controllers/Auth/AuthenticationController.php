@@ -18,7 +18,7 @@ class AuthenticationController extends Controller
 
         if (Auth::attempt($credentials)) {
             Log::info('User authenticated successfully');
-            return redirect()->intended('/diary');
+            return redirect()->intended('/');
         }
 
         return back()->withErrors([
@@ -33,6 +33,6 @@ class AuthenticationController extends Controller
         $request->session()->regenerateToken();
         Log::info('User logged out successfully');
 
-        return redirect('/');
+        return redirect('/login');
     }
 }

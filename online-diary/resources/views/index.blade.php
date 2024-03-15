@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Varbi diary</title>
-</head>
-<body>
-    <h1>This is a personal diary, please log in to view it.</h1>
+@extends('layouts.app')
 
-    @auth
-    <!-- If user is logged in, show logout button -->
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-        <button type="submit" class="btn btn-danger">Logout</button>
-    </form>
-    @else
-        <!-- If user is not logged in, show login button -->
-        <a href="{{ route('auth.login-page') }}" class="btn btn-primary">Go to Login Page</a>
-    @endauth
-</body>
-</html>
+@section('Varbi diary', 'Index Page')
+
+@section('content')
+
+    <h1 class="text-2xl font-mono font-black text-stone-300 tracking-widest mx-5">
+        My diary
+    </h1>
+    @if(session('success'))
+        <div class="alert alert-success text-sm italic m-5 text-stone-300">
+            {{ session('success') }}
+        </div>
+    @endif
+    
+    @include('diary.diary-container', ['diaryMessages' => $diaryMessages])
+        
+@endsection
