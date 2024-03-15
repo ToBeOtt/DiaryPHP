@@ -18,7 +18,7 @@ class DiaryMessageFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence,
-            'text' => $this->faker->paragraph,
+            'text' => $this->faker->paragraph(10),
             'date_created' => $this->faker->dateTimeBetween('-1 week', 'now'),
             'is_deleted' => false,
         ];

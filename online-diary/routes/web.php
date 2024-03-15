@@ -6,7 +6,6 @@ use App\Http\Controllers\Diary\DiaryController;
 
 
 // DIARIES
-
 Route::get(
     '/',
     [DiaryController::class, 'index']

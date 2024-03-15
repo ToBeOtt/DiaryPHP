@@ -22,7 +22,7 @@
                 class="form-control w-[50vw] p-1 rounded-sm border border-black" 
                 id="text" 
                 name="text" 
-                rows="4">
+                rows="10">
             </textarea>
         </div>
 

@@ -23,7 +23,7 @@
                 class="form-control w-[50vw] p-1 rounded-sm border border-black" 
                 id="text" 
                 name="text" 
-                rows="4">{{ $diary->text }}</textarea>
+                rows="10">{{ $diary->text }}</textarea>
         </div>
 
         <button 

@@ -11,7 +11,9 @@ use Illuminate\Support\Facades\Hash;
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Seed one user. First I wanted to seed a bunch of messages as well (the outcommented 
+     * data below). I then discovered the factory method and chose to go with that 
+     * instead.
      */
     public function run(): void
     {

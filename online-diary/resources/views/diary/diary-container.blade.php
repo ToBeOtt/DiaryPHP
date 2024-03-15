@@ -36,14 +36,18 @@
         </section>
     </div> 
 
-    <div class="row-span-1">
-        <h1 class="text-lg font-mono text-stone-500 mx-7 pt-2">{{ $diaryMessage->title }}</h1>
+    <div class="row-span-2">
+        <h1 class="text-lg font-mono text-stone-500 mx-7 py-2">{{ $diaryMessage->title }}</h1>
+        <div class="row-span-1 mx-10">
+            <p>{{ $diaryMessage->text }}</p>
+        </div>
     </div> 
 
-    <div class="row-span-2 mx-10">
-        <p>{{ $diaryMessage->text }}</p>
-    </div>
+    
 
+    <div class="row-span-1">
+
+    </div>
 </section>
    
 @endforeach

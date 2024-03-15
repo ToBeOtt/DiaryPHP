@@ -48,7 +48,6 @@ class DiaryController extends Controller
         return redirect()->route('diary.index')->with('success', 'Diary message added successfully');
     }
 
-
     public function editDiaryMessage(DiaryMessage $diary)
     {
         Log::info('Redirecting to edit-page');
