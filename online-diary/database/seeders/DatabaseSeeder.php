@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Seeding a user, making use of the nice prebuilt auth-features that comes out of the box
+        // with laravel.
         User::factory()->create([
             'name' => 'VarbiUser',
             'email' => 'varbi@mail.com',

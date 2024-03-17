@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthenticationController;
 use App\Http\Controllers\Diary\DiaryController;
 
+// To my understanding, this is not the best way of grouping and organizing the routes, but I chose
+// focus my attention on other areas since it still is quite few routes, so I think it is no 
+// bigger troubles to overlook the routings.
 
 // DIARIES
 Route::get(

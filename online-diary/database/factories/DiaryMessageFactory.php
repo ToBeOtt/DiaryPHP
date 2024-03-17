@@ -10,9 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class DiaryMessageFactory extends Factory
 {
     /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
+     * This factory will output random-generated diary-messages
      */
     public function definition(): array
     {

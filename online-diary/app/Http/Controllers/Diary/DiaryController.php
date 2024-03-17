@@ -30,7 +30,8 @@ class DiaryController extends Controller
     public function addDiaryMessage(Request $request)
     {
         Log::info('Add diary initiated');
-
+        // Make sure the info provided has something attached and thus is meaningful to 
+        // update db with.
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
             'text' => 'required|string',
@@ -51,6 +52,8 @@ class DiaryController extends Controller
     public function editDiaryMessage(DiaryMessage $diary)
     {
         Log::info('Redirecting to edit-page');
+
+        // Return the diary-object with key value 'diary' to the edit-form-view.
         return view('diary.edit-diary', compact('diary'));
     }
 
