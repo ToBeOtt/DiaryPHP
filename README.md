@@ -26,6 +26,7 @@ To run application, opem two terminals:
 Else, if docker is installed
 
 -   Open powershell, navigate to root-folder of application where the dockerfile is.
+- 	type 'composer install' (should be run from the dockerfile, but sometimes it needs to be run again, not sure why)
 -   type 'docker-compose build'
 -   type 'docker-compose up'
     open browser, navigate to http://localhost
