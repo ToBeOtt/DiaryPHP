@@ -1,6 +1,6 @@
 ======== Brief overview ========
 
-This is a code-test for Varbi. I have used PHP and laravel in order to achieve the objectives. I have tried following the best practices that I've read up on online.
+I have used PHP and laravel in order to achieve the objectives. I have tried following the best practices that I've read up on online.
 
 I do that commenting on functions etc is important, in this simple crud-application however I felt that most code was very self-explanatory. I have used a few libraries, such as Carbon for date-handling for example.
 
